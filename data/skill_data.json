@@ -1,0 +1,56 @@
+[
+  {
+    "id": "basic_tuna",
+    "name": "基础吐纳法",
+    "quality": "凡级",
+    "element": "无",
+    "description": "最基础的灵气吐纳之法，修仙之始。",
+    "effects": { "cultivationSpeed": 1.0 },
+    "learnCondition": { "realm": "练气一层" }
+  },
+  {
+    "id": "yunjue",
+    "name": "云诀",
+    "quality": "凡级",
+    "element": "无",
+    "description": "观云卷云舒而悟出的吐纳法，中正平和。",
+    "effects": { "cultivationSpeed": 1.2, "qiRegen": 1 },
+    "learnCondition": { "realm": "练气二层" }
+  },
+  {
+    "id": "huoyan",
+    "name": "灼焰诀",
+    "quality": "灵级",
+    "element": "火",
+    "description": "以火灵根引动天地火气，霸道凌厉。",
+    "effects": { "cultivationSpeed": 1.5, "fireDamage": 1.2 },
+    "learnCondition": { "realm": "练气三层", "spiritRoot": ["火"] }
+  },
+  {
+    "id": "houtu",
+    "name": "厚土诀",
+    "quality": "灵级",
+    "element": "土",
+    "description": "引大地之气淬炼己身，稳如磐石。",
+    "effects": { "cultivationSpeed": 1.4, "defense": 1.2 },
+    "learnCondition": { "realm": "练气三层", "spiritRoot": ["土"] }
+  },
+  {
+    "id": "jinjue",
+    "name": "金锋诀",
+    "quality": "凡级",
+    "element": "金",
+    "description": "以金灵根凝聚锋锐之气，攻伐犀利。",
+    "effects": { "cultivationSpeed": 1.3, "attack": 1.15 },
+    "learnCondition": { "realm": "练气三层", "spiritRoot": ["金"] }
+  },
+  {
+    "id": "sanmei",
+    "name": "三昧真火诀",
+    "quality": "地级",
+    "element": "火",
+    "description": "上古火修传承，引三昧真火焚尽万物。",
+    "effects": { "cultivationSpeed": 2.0, "fireDamage": 1.5 },
+    "learnCondition": { "realm": "练气五层", "spiritRoot": ["火"] }
+  }
+]

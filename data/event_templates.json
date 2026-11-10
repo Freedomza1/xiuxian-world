@@ -1,0 +1,92 @@
+{
+  "events": [
+    {
+      "id": "old_man_gift",
+      "type": "奇遇",
+      "trigger": { "scene": "qingyun", "random": 0.15 },
+      "title": "老者的馈赠",
+      "description": "路边一位白发老者叫住了你，从怀中取出一卷泛黄的书简。",
+      "choices": [
+        { "text": "恭敬接过", "result": "获得功法秘籍", "reward": { "skillScroll": "yunjue" } },
+        { "text": "婉言谢绝", "result": "老者微微一笑，飘然而去", "reward": { "mood": 5 } }
+      ]
+    },
+    {
+      "id": "mysterious_light",
+      "type": "奇遇",
+      "trigger": { "scene": "luoxia_forest", "random": 0.12 },
+      "title": "幽林异光",
+      "description": "林间深处忽然闪过一道青光，你循光而去，发现一株通体透明的灵草。",
+      "choices": [
+        { "text": "小心翼翼地采下", "result": "获得百年灵芝", "reward": { "item": "百年灵芝" } },
+        { "text": "守护在旁等其成熟", "result": "灵芝精华更足，但引来了妖兽", "reward": { "item": "千年灵芝", "combat": true } }
+      ]
+    },
+    {
+      "id": "fisherman_tale",
+      "type": "传闻",
+      "trigger": { "scene": "bibo_lake", "random": 0.2 },
+      "title": "渔夫的故事",
+      "description": "一位老渔夫告诉你，昨夜湖心出现了奇异的光芒，像是水中有宝物出世。",
+      "choices": [
+        { "text": "去湖心一探究竟", "result": "潜入湖底发现一处水下洞府", "reward": { "item": "水灵珠", "qi": 20 } },
+        { "text": "将信将疑", "result": "你摇摇头走开了", "reward": {} }
+      ]
+    },
+    {
+      "id": "bandit_ambush",
+      "type": "危机",
+      "trigger": { "scene": "heifeng_ridge", "random": 0.25 },
+      "title": "山贼伏击",
+      "description": "路边的草丛中忽然跃出几个手持刀兵的大汉，狞笑着将你围住！",
+      "choices": [
+        { "text": "拔剑迎战", "result": "一场恶战", "reward": { "combat": true, "loot": "灵石袋" } },
+        { "text": "施展身法遁走", "result": "你身如轻烟，消失在密林中", "reward": { "mood": -3 } }
+      ]
+    },
+    {
+      "id": "ancient_tomb",
+      "type": "奇遇",
+      "trigger": { "scene": "leiyin_temple", "random": 0.1 },
+      "title": "古佛密室",
+      "description": "你无意中触动了一块松动的地砖，露出一条幽暗的暗道。暗道尽头，是一间尘封的密室。",
+      "choices": [
+        { "text": "踏入密室", "result": "发现一卷上古功法残篇", "reward": { "skillScroll": "sanmei" } },
+        { "text": "原地退回", "result": "你感到一丝不安，退出了暗道", "reward": { "mood": -2 } }
+      ]
+    },
+    {
+      "id": "spirit_spring",
+      "type": "机缘",
+      "trigger": { "scene": "underground_river", "random": 0.15 },
+      "title": "灵泉涌动",
+      "description": "暗河旁的石缝中忽然涌出一股清澈的泉水，散发着浓郁的灵气！",
+      "choices": [
+        { "text": "沐浴灵泉", "result": "灵气灌体，修为大进", "reward": { "cultivationPoints": 200 } },
+        { "text": "取水带走", "result": "装了一壶灵泉水", "reward": { "item": "灵泉水" } }
+      ]
+    },
+    {
+      "id": "wounded_swordsman",
+      "type": "人际",
+      "trigger": { "random": 0.08 },
+      "title": "负剑之人",
+      "description": "路边有一位浑身是血的剑客倒在树下，手中仍紧紧握着一柄断剑。",
+      "choices": [
+        { "text": "施救", "result": "你用灵力稳住他的心脉", "reward": { "npcFriend": "剑客·柳云", "skillScroll": "jinjue" } },
+        { "text": "搜身离去", "result": "拿了东西就走", "reward": { "item": "破损的灵石", "mood": -10 } }
+      ]
+    },
+    {
+      "id": "test_of_heart",
+      "type": "心境",
+      "trigger": { "random": 0.1, "condition": { "realm": "练气四层" } },
+      "title": "心魔试炼",
+      "description": "修炼时忽然陷入幻境——你看到自己寿元耗尽、一生未达大道，亲友逐个离去……",
+      "choices": [
+        { "text": "坦然面对，破除幻象", "result": "道心坚定，修为反而精进", "reward": { "cultivationPoints": 150, "mood": 15 } },
+        { "text": "强行挣脱", "result": "虽破幻境，心神受损", "reward": { "mood": -8 } }
+      ]
+    }
+  ]
+}

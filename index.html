@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>仙</title>
+<link rel="stylesheet" href="css/style.css?v=27">
+<span id="ice-bg-data" data-b64="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" style="display:none;"></span>
+</head>
+<body>
+<div id="app" class="hidden">
+  <!-- 顶栏 -->
+  <div id="topbar">
+    <div class="game-title">仙</div>
+    <div class="top-stats">
+      <span class="stat" id="stat-realm">炼体一重 · 练气一层</span>
+      <span class="stat" id="stat-qi">灵力: 100/100</span>
+      <span class="stat" id="stat-hp">气血: 100/100</span>
+      <span class="stat" id="stat-age">寿元: 16/120年</span>
+      <span class="stat-highlight" id="stat-stones">灵石: 0</span>
+      <span class="stat-highlight" id="stat-cp">战力: 0 (凡人)</span>
+      <span class="stat" id="stat-bodyperk" style="font-size:10px;color:#d4a045;display:block;grid-column:1/-1;"></span>
+      <span class="stat" id="stat-fame" style="font-size:10px;color:#e8c88a;display:block;grid-column:1/-1;"></span>
+      <span class="stat" id="stat-season" style="font-size:10px;display:block;grid-column:1/-1;"></span>
+      <!-- 📜 待领悟功法 -->
+      <span id="stat-pending" style="font-size:10px;display:block;grid-column:1/-1;color:#8cc;padding:1px 6px;background:rgba(80,180,200,0.08);border-radius:4px;"></span>
+      <!-- 🌠 天机指引：当前最该做的事 -->
+      <span id="tianji-hint" style="font-size:10px;display:block;grid-column:1/-1;color:#ffd700;padding:2px 6px;background:rgba(255,215,0,0.08);border-radius:6px;border:1px solid rgba(255,215,0,0.2);margin-top:2px;"></span>
+      <!-- 修炼进度条：炼气 + 炼体 迷你双条 -->
+      <div style="grid-column:1/-1;display:flex;gap:8px;align-items:center;margin-top:2px;">
+        <div style="flex:1;display:flex;align-items:center;gap:4px;">
+          <span style="font-size:9px;color:#8cc;white-space:nowrap;">☯️</span>
+          <div class="progress-bar-bg" style="height:5px;flex:1;min-width:0;">
+            <div class="progress-bar-fill" id="topbar-qi-fill" style="width:0%;height:5px;background:linear-gradient(90deg,#6a9ec9,#e8c88a);"></div>
+          </div>
+          <span id="topbar-qi-pct" style="font-size:9px;color:#8cc;white-space:nowrap;">0%</span>
+        </div>
+        <div style="flex:1;display:flex;align-items:center;gap:4px;">
+          <span style="font-size:9px;color:#c9a96e;white-space:nowrap;">💪</span>
+          <div class="progress-bar-bg" style="height:5px;flex:1;min-width:0;">
+            <div class="progress-bar-fill" id="topbar-body-fill" style="width:0%;height:5px;background:linear-gradient(90deg,#8a7a5a,#c9a96e);"></div>
+          </div>
+          <span id="topbar-body-pct" style="font-size:9px;color:#c9a96e;white-space:nowrap;">0%</span>
+        </div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button onclick="saveGame()" title="保存">💾</button>
+      <button onclick="showAchievements()" title="成就">🏆</button>
+      <button onclick="confirmQuitToTitle()" title="退出到主界面" style="margin-left:4px;">🚪</button>
+    </div>
+  </div>
+
+  <!-- 主内容区 -->
+  <div id="main">
+    <!-- 左侧：角色面板 -->
+    <div id="panel-left">
+      <div class="panel-box" id="player-card">
+        <div class="panel-title" id="player-name">夜如水</div>
+        <div class="panel-sub">命格：</div>
+        <div class="attr-grid">
+          <div class="attr-row"><span class="attr-label">灵根</span><span class="attr-value" id="attr-root"></span></div>
+          <div class="attr-row"><span class="attr-label">气运</span><span class="attr-value" id="attr-luck"></span></div>
+          <div class="attr-row"><span class="attr-label">悟性</span><span class="attr-value" id="attr-wisdom"></span></div>
+          <div class="attr-row"><span class="attr-label">根骨</span><span class="attr-value" id="attr-bone"></span></div>
+          <div class="attr-row"><span class="attr-label">心境</span><span class="attr-value" id="attr-mood">平稳</span></div>
+          <div class="attr-row"><span class="attr-label">攻击</span><span class="attr-value" id="attr-attack">10</span></div>
+          <div class="attr-row"><span class="attr-label">防御</span><span class="attr-value" id="attr-defense">8</span></div>
+        </div>
+        <!-- 双修进度条 -->
+        <div class="progress-section">
+          <div class="progress-row">
+            <div class="progress-label"><span>💪 炼体</span><span id="progress-body-label">炼体一重</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-body-fill" style="width:0%;background:linear-gradient(90deg,#8a7a5a,#c9a96e)"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-label"><span>🧘 炼气</span><span id="progress-qi-label">练气一层</span></div>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-qi-fill" style="width:0%;background:linear-gradient(90deg,#6a9ec9,#e8c88a)"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-box" id="skill-panel">
+        <div class="panel-title">📜 功法（点击切换主修）</div>
+        <div id="skill-list"></div>
+      </div>
+    </div>
+
+    <!-- 中间：叙事主区 -->
+    <div id="panel-center">
+      <div id="scene-title">青云镇</div>
+      <div id="scene-desc">一座依山傍水的宁静小镇……</div>
+      <div id="narrative-log"></div>
+      <div id="actions-panel">
+        <div id="actions-title">场景行动</div>
+        <div id="actions-list"></div>
+      </div>
+    </div>
+
+    <!-- 右侧：感知 + 背包 + 装备 + 轶事 -->
+    <div id="panel-right">
+      <div id="poi-panel" style="margin-bottom:6px;"></div>
+      <div id="world-event-panel" style="margin-bottom:6px;"></div>
+      <div id="perception-panel">
+        <div class="panel-box perception-box">
+          <div class="panel-title">🔍 感知 · 青云镇</div>
+          <div class="perc-row"><span>灵气</span><span class="perc-stars">☆☆☆</span></div>
+          <div class="perc-row"><span>危险</span><span>安全</span></div>
+        </div>
+      </div>
+      <div class="panel-box" id="scene-npcs-panel">
+        <div class="panel-title" id="scene-npcs-title">👥 附近的人</div>
+        <div id="scene-npcs-list">暂无</div>
+      </div>
+      <div class="panel-box" id="inventory-panel">
+        <div class="panel-title">🎒 背包（点击使用/装备）</div>
+        <div id="inventory-list">空空如也</div>
+      </div>
+      <div class="panel-box" id="equip-panel">
+        <div class="panel-title">🗡️ 法器（点击卸下）</div>
+        <div id="equip-list">—</div>
+      </div>
+      <div class="panel-box" id="event-log">
+        <div class="panel-title">📖 轶事录</div>
+        <div id="event-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部状态 + 快捷操作 -->
+  <div id="bottombar">
+    <span id="timer-display">午时 · 第1日</span>
+    <span id="location-display">东荒域 · 青云镇</span>
+    <button onclick="perceive()" id="btn-perceive">🔍 感知</button>
+    <button onclick="showWorldMap()" id="btn-map" style="color:var(--accent);font-weight:bold;">🗺️ 世界地图</button>
+    <button onclick="showWorldLifeReport()">🌍 世界</button>
+    <button onclick="startMeditation()" id="btn-qi">🧘 打坐</button>
+    <button onclick="manualBodyCultivate()" id="btn-body">💪 炼体</button>
+    <button onclick="startRest()" id="btn-rest">😴 休息</button>
+    <button onclick="explore()" id="btn-explore">🔍 探索</button>
+    <button onclick="showIceFairyChatModal()" id="btn-ice-chat" style="display:none;background:rgba(90,140,200,0.18);border-color:rgba(120,180,240,0.4);color:#a8c8e8;">💌 千里传情</button>
+    <button onclick="cleanInventory()" id="btn-clean">🧹 整理</button>
+    <button onclick="toggleAutoMode()" id="btn-auto">🤖 自动</button>
+    <button onclick="toggleAutoNourish()" id="btn-auto-nourish" style="font-size:10px;padding:2px 6px;background:rgba(100,100,100,0.25);">🔮 温养:开</button>
+    <button onclick="toggleAutoFeed()" id="btn-auto-feed" style="font-size:10px;padding:2px 6px;background:rgba(100,100,100,0.25);">🐾 喂宠:开</button>
+  </div>
+</div>
+
+<!-- 欢迎/创角界面 -->
+<div id="welcome">
+  <div class="welcome-box">
+    <h1>仙</h1>
+    <p class="welcome-sub">— 天命开局 —</p>
+    <div class="welcome-art">
+      ═══════════════════════════<br>
+      　　　 　　☁︎<br>
+      　 　 　 ／　＼<br>
+      　 　 ／ 山 峰 ＼<br>
+      　 ／ 云 雾 缭 绕 ＼<br>
+      　 ─────────────<br>
+      　 │ 仙 │<br>
+      　 ─────────────<br>
+      　 │ 修仙之路 由此开始 │<br>
+    </div>
+    <button onclick="showEraSelect()" class="btn-start">☯️ 进入世界</button>
+  </div>
+</div>
+
+<!-- 玄黄大陆 · 世界地图弹窗 -->
+<!-- 全屏世界地图 -->
+<div id="worldmap-overlay" class="overlay hidden" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);overflow:auto;">
+    <div style="max-width:1400px;margin:0 auto;padding:12px 16px 40px;">
+      <!-- 顶部栏 -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span id="map-title-text" style="font-size:16px;font-weight:bold;color:var(--accent);">🗺️ 玄黄大陆</span>
+          <span id="map-domain-subtitle" style="font-size:11px;color:var(--text-dim);"></span>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <span style="font-size:9px;color:var(--text-dim);" id="map-current-location"></span>
+          <button onclick="if(typeof closeWorldMap==='function')closeWorldMap()" style="padding:4px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:var(--text-dim);cursor:pointer;font-size:13px;">✕</button>
+        </div>
+      </div>
+      <!-- 主体 -->
+      <div id="worldmap-content" style="min-height:70vh;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 事件弹窗 -->
+<div id="event-overlay" class="overlay hidden">
+  <div class="overlay-box event-box">
+    <div class="overlay-header">
+      <span id="event-title"></span>
+      <button onclick="closeEvent()">✕</button>
+    </div>
+    <div id="event-body" class="overlay-body"></div>
+    <div id="event-choices"></div>
+  </div>
+</div>
+
+<!-- 战斗弹窗 -->
+<div id="combat-overlay" class="overlay hidden">
+  <div class="overlay-box combat-box">
+    <div class="overlay-header">
+      <span>⚔️ 战斗！</span>
+      <span id="combat-status"></span>
+    </div>
+    <div id="combat-body"></div>
+    <div id="combat-actions"></div>
+  </div>
+</div>
+
+<!-- 喊话弹窗 -->
+<div id="speak-overlay" class="overlay hidden">
+  <div class="overlay-box" style="min-width:300px;">
+    <div class="overlay-header">
+      <span>💬 喊话</span>
+      <button onclick="closeSpeakModal()">✕</button>
+    </div>
+    <div style="margin-bottom:12px;">
+      <textarea id="speak-input" rows="3" style="width:100%;background:rgba(0,0,0,0.4);color:var(--text);border:1px solid var(--panel-border);border-radius:4px;padding:8px;font-family:inherit;font-size:13px;resize:none;" placeholder="输入你想说的话…"></textarea>
+    </div>
+    <div id="event-choices">
+      <button class="event-choice-btn" onclick="submitSpeak()">🗣️ 朗声说话</button>
+      <button class="event-choice-btn" onclick="closeSpeakModal()">🚶 不说了</button>
+    </div>
+  </div>
+</div>
+
+<!-- 论道弹窗 -->
+<div id="dao-overlay" class="overlay hidden">
+  <div class="overlay-box" style="min-width:300px;">
+    <div class="overlay-header">
+      <span>☯️ 论道</span>
+      <button onclick="closeDaoModal()">✕</button>
+    </div>
+    <div style="margin-bottom:12px;">
+      <textarea id="dao-input" rows="3" style="width:100%;background:rgba(0,0,0,0.4);color:var(--text);border:1px solid var(--panel-border);border-radius:4px;padding:8px;font-family:inherit;font-size:13px;resize:none;" placeholder="阐述你对大道的感悟…"></textarea>
+    </div>
+    <div id="event-choices">
+      <button class="event-choice-btn" onclick="submitDao()">☯️ 论道</button>
+      <button class="event-choice-btn" onclick="closeDaoModal()">🚶 退下</button>
+    </div>
+  </div>
+</div>
+
+<!-- 成就弹窗 -->
+<div id="achievement-overlay" class="overlay hidden">
+  <div class="overlay-box achievement-box">
+    <div class="overlay-header">
+      <span>🏆 成就录</span>
+      <button onclick="closeAchievements()">✕</button>
+    </div>
+    <div id="achievement-body"></div>
+  </div>
+</div>
+
+<!-- 💪 炼体 - 养生经典沉浸锻炼 -->
+<div id="body-cultivate-overlay" class="overlay hidden" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);display:flex;align-items:center;justify-content:center;">
+    <div style="max-width:560px;width:93%;padding:20px 24px;border-radius:12px;background:rgba(18,15,12,0.96);border:1px solid rgba(201,169,110,0.12);text-align:center;position:relative;">
+      <!-- 中途退出：随时可退（不结算收益，不扣每日次数） -->
+      <div style="position:absolute;top:8px;right:10px;z-index:5;">
+        <button onclick="abortBodyCultivate()" title="退出炼体（不结算）" style="background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text-dim);border-radius:4px;padding:2px 8px;font-size:10px;cursor:pointer;">✕ 退出</button>
+      </div>
+      <!-- 顶部 -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <div style="font-size:20px;">💪</div>
+        <div style="font-size:12px;color:var(--accent);"><span id="body-location"></span></div>
+        <div id="body-classic-title" style="font-size:11px;color:var(--text-dim);"></div>
+      </div>
+      <!-- 经典正文 -->
+      <div id="body-text" style="min-height:170px;margin-bottom:10px;padding:14px 16px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(201,169,110,0.06);text-align:left;">
+        <div id="body-classic" style="font-size:14px;color:#d4ccbc;line-height:1.9;font-family:'KaiTi','STKaiti','SimSun',serif;letter-spacing:0.5px;"></div>
+        <div id="body-translation" style="font-size:11px;color:var(--text-dim);line-height:1.6;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.04);"></div>
+      </div>
+      <!-- 活动提醒区(炼体专属) -->
+      <div id="body-activity" style="margin-bottom:10px;padding:10px 12px;background:rgba(76,175,80,0.06);border-radius:8px;border:1px solid rgba(76,175,80,0.12);display:none;">
+        <div id="body-activity-text" style="font-size:13px;color:#8bc34a;line-height:1.5;"></div>
+      </div>
+      <!-- 互动区 -->
+      <div id="body-interact" style="display:none;margin-bottom:10px;padding:10px;background:rgba(201,169,110,0.06);border-radius:8px;border:1px solid rgba(201,169,110,0.12);">
+        <div style="font-size:11px;color:var(--accent);margin-bottom:8px;">💪 体悟要领……</div>
+        <div id="body-choices" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;"></div>
+      </div>
+      <!-- 进度 -->
+      <div style="width:100%;height:4px;border-radius:2px;background:rgba(255,255,255,0.06);overflow:hidden;margin-bottom:4px;">
+        <div id="body-bar" style="height:100%;width:0%;border-radius:2px;background:linear-gradient(90deg,#66bb6a,#81c784);"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);">
+        <span id="body-step">舒筋</span>
+        <span id="body-pct">0%</span>
+      </div>
+      <!-- 结果 -->
+      <div id="body-result" style="display:none;padding:10px 0 4px;"></div>
+      <button id="body-close-btn" onclick="closeBodyCultivate()" style="display:none;margin-top:6px;padding:6px 24px;border-radius:6px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-size:11px;">继续修行</button>
+    </div>
+  </div>
+</div>
+
+<!-- 😴 休息 - 诗词沉浸 -->
+<div id="rest-overlay" class="overlay hidden" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);display:flex;align-items:center;justify-content:center;">
+    <div style="max-width:560px;width:93%;padding:20px 24px;border-radius:12px;background:rgba(18,15,12,0.96);border:1px solid rgba(201,169,110,0.12);text-align:center;position:relative;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <div style="font-size:20px;">😴</div>
+        <div style="font-size:12px;color:var(--accent);"><span id="rest-location"></span> · 休憩</div>
+        <div id="rest-poem-author" style="font-size:11px;color:var(--text-dim);"></div>
+      </div>
+      <div id="rest-text" style="min-height:160px;margin-bottom:10px;padding:14px 16px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(201,169,110,0.06);text-align:center;">
+        <div id="rest-poem-title" style="font-size:13px;color:#d4ccbc;font-weight:bold;margin-bottom:6px;"></div>
+        <div id="rest-poem-text" style="font-size:13px;color:#d4ccbc;line-height:2;font-family:'KaiTi','STKaiti','SimSun',serif;letter-spacing:1px;margin-top:8px;"></div>
+      </div>
+      <div style="width:100%;height:4px;border-radius:2px;background:rgba(255,255,255,0.06);overflow:hidden;margin-bottom:4px;">
+        <div id="rest-bar" style="height:100%;width:0%;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent-glow));"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);">
+        <span id="rest-step">🍵 品茗</span>
+        <span id="rest-pct">0%</span>
+      </div>
+      <div id="rest-result" style="display:none;padding:10px 0 4px;"></div>
+      <button id="rest-close-btn" onclick="closeRest()" style="display:none;margin-top:6px;padding:6px 24px;border-radius:6px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-size:11px;">继续修行</button>
+    </div>
+  </div>
+</div>
+
+<!-- 🧘 打坐 - 道德经沉浸读经 -->
+<div id="meditation-overlay" class="overlay hidden" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);display:flex;align-items:center;justify-content:center;">
+    <div style="max-width:560px;width:93%;padding:20px 24px;border-radius:12px;background:rgba(18,15,12,0.96);border:1px solid rgba(201,169,110,0.12);text-align:center;position:relative;">
+      <!-- 顶部：场景 + 章节信息 -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <div style="font-size:20px;">🧘</div>
+        <div style="font-size:12px;color:var(--accent);"><span id="med-location"></span></div>
+        <div id="med-chapter-num" style="font-size:11px;color:var(--text-dim);"></div>
+      </div>
+      <!-- 中途退出：随时可退（不结算收益，不扣每日次数） -->
+      <div style="position:absolute;top:8px;right:10px;z-index:5;">
+        <button onclick="abortMeditation()" title="退出打坐（不结算）" style="background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text-dim);border-radius:4px;padding:2px 8px;font-size:10px;cursor:pointer;">✕ 退出</button>
+      </div>
+      <!-- 经文正文 -->
+      <div id="med-text" style="min-height:180px;margin-bottom:10px;padding:14px 16px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(201,169,110,0.06);text-align:left;">
+        <div id="med-classic" style="font-size:14px;color:#d4ccbc;line-height:1.9;font-family:'KaiTi','STKaiti','SimSun',serif;letter-spacing:0.5px;"></div>
+        <div id="med-translation" style="font-size:11px;color:var(--text-dim);line-height:1.6;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.04);"></div>
+      </div>
+      <!-- 互动区 -->
+      <div id="med-interact" style="display:none;margin-bottom:10px;padding:10px;background:rgba(201,169,110,0.06);border-radius:8px;border:1px solid rgba(201,169,110,0.12);">
+        <div style="font-size:11px;color:var(--accent);margin-bottom:8px;">💡 心有感悟……</div>
+        <div id="med-choices" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;"></div>
+      </div>
+      <!-- 进度 -->
+      <div style="width:100%;height:4px;border-radius:2px;background:rgba(255,255,255,0.06);overflow:hidden;margin-bottom:4px;">
+        <div id="med-bar" style="height:100%;width:0%;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent-glow));"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);">
+        <span id="med-step">凝神</span>
+        <span id="med-pct">0%</span>
+      </div>
+      <!-- 结果区 -->
+      <div id="med-result" style="display:none;padding:10px 0 4px;"></div>
+      <button id="med-close-btn" onclick="closeMeditation()" style="display:none;margin-top:6px;padding:6px 24px;border-radius:6px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-size:11px;">继续修行</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* 网页版：API Key 只存在本机浏览器（localStorage），不写进公开仓库。
+   访问 ?setkey=1 可以重新设置。 */
+(function () {
+  var KEY = 'xiuxian_api_key', ASKED = 'xiuxian_key_asked';
+  var k = '';
+  try { k = localStorage.getItem(KEY) || ''; } catch (e) {}
+  var want = /[?&]setkey=1/.test(location.search);
+  if (!want && !k) {
+    try { want = !localStorage.getItem(ASKED); } catch (e) { want = true; }
+  }
+  if (want) {
+    var v = window.prompt('粘贴 DeepSeek API Key（用于 AI 对话与叙事；可留空跳过，之后在网址后加 ?setkey=1 可重设）', k);
+    if (v !== null) {
+      try {
+        localStorage.setItem(KEY, v.replace(/\s+/g, ''));
+        localStorage.setItem(ASKED, '1');
+      } catch (e) {}
+      location.replace(location.pathname);
+      return;
+    }
+    try { localStorage.setItem(ASKED, '1'); } catch (e) {}
+  }
+  window.XIUXIAN_CONFIG = { DEEPSEEK_API_KEY: k, ICE_FAIRY_API_KEY: k };
+})();
+</script>
+<script src="js/equipment_drops.js?v=4"></script>
+<script src="js/data.js?v=46"></script>
+<script src="js/sages.js?v=1"></script>
+<script src="js/ice_fairy.js?v=66"></script>
+<script src="js/ascension.js?v=3"></script>
+<script src="js/item_sources.js?v=55"></script>
+<script src="js/engine.js?v=119"></script>
+<script src="js/map_details.js?v=78"></script>
+<script src="js/narrative.js?v=55"></script>
+<script src="js/combat.js?v=105"></script>
+<script src="js/trial_tower.js?v=18"></script>
+<script src="js/npc.js?v=39"></script>
+<script src="js/custom_skill_pool.js?v=4"></script>
+<script src="js/enlightenment.js?v=63"></script>
+<script src="js/world_perception.js?v=56"></script>
+<script src="js/lifespan.js?v=3"></script>
+<script src="js/xinmo.js?v=5"></script>
+<script src="js/alchemy.js?v=7"></script>
+<script src="js/enlighten_spot.js?v=3"></script>
+<script src="js/forge.js?v=4"></script>
+<script src="js/beast.js?v=8"></script>
+<script src="js/era2.js?v=8"></script>
+<script src="js/sect_npcs.js?v=3"></script>
+<script src="js/sect_map.js?v=7"></script>
+<script src="js/sect_features.js?v=5"></script>
+<script src="js/sect_stories.js?v=4"></script>
+<script src="js/karma.js?v=1"></script>
+<script src="js/fame.js?v=1"></script>
+<script src="js/seasons.js?v=1"></script>
+<script src="js/mentor.js?v=2"></script>
+<script src="js/breakthrough_ritual.js?v=7"></script>
+<script src="js/benming.js?v=8"></script>
+<script src="js/shensi.js?v=3"></script>
+<script src="js/time_system.js?v=53"></script>
+<script src="js/npc_chat.js?v=3"></script>
+<script src="js/world_simulator.js?v=53"></script>
+<script src="js/world_events.js?v=2"></script>
+<script src="js/auto_play.js?v=128"></script>
+<script src="js/jianghu.js?v=3"></script>
+<script src="js/quest.js?v=65"></script>
+<script src="js/secret_realm.js?v=11"></script>
+<script src="js/relic_explore.js?v=3"></script>
+<script src="js/story_log.js?v=58"></script>
+<script src="js/character_panel.js?v=7"></script>
+<script src="js/skill_tooltip.js?v=3"></script>
+<script src="js/ui.js?v=171"></script>
+<script src="js/world_massive.js?v=58"></script>
+<script src="js/main.js?v=27"></script>
+</body>
+</html>

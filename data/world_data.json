@@ -1,0 +1,219 @@
+{
+  "regions": [
+    {
+      "id": "donghuang",
+      "name": "东荒域",
+      "description": "九州东境，群山连绵，灵气充裕。散修与小型宗门遍布其间。",
+      "scenes": [
+        {
+          "id": "qingyun",
+          "name": "青云镇",
+          "description": "一座依山傍水的宁静小镇，修仙者和凡人混居。坊市里叫卖声不绝，客栈中消息灵通。",
+          "type": "town",
+          "safe": true,
+          "qiLevel": 3,
+          "npcPool": [
+            "药店掌柜",
+            "铁匠老吴",
+            "客栈小二",
+            "街边乞丐"
+          ],
+          "feature": "坊市",
+          "connections": [
+            "luoxia_forest",
+            "heifeng_ridge",
+            "bibo_lake"
+          ]
+        },
+        {
+          "id": "luoxia_forest",
+          "name": "落霞森林",
+          "description": "古木参天，枝叶遮天蔽日。阳光透过树叶的缝隙洒下斑驳光影，偶尔有妖兽的嘶吼从深处传来。",
+          "type": "wild",
+          "safe": false,
+          "qiLevel": 4,
+          "dangerLevel": 1,
+          "monsters": [
+            "野狼",
+            "青木蛇",
+            "铁皮野猪"
+          ],
+          "connections": [
+            "qingyun",
+            "youming_grotto",
+            "leiyin_temple"
+          ]
+        },
+        {
+          "id": "youming_grotto",
+          "name": "幽冥鬼窟",
+          "description": "阴气森森的古老洞窟，石壁上爬满了暗绿色的苔藓。深处隐约有鬼火飘动，寒意刺骨。",
+          "type": "dungeon",
+          "safe": false,
+          "qiLevel": 5,
+          "dangerLevel": 2,
+          "monsters": [
+            "幽魂",
+            "骷髅兵",
+            "阴煞蛛"
+          ],
+          "connections": [
+            "luoxia_forest",
+            "underground_river"
+          ]
+        },
+        {
+          "id": "bibo_lake",
+          "name": "碧波湖",
+          "description": "一望无际的碧绿湖水，湖面如镜，倒映着蓝天白云。传说湖心有水灵珠，但从未有人证实。",
+          "type": "wild",
+          "safe": true,
+          "qiLevel": 4,
+          "feature": "钓鱼",
+          "connections": [
+            "qingyun",
+            "leiyin_temple"
+          ]
+        },
+        {
+          "id": "heifeng_ridge",
+          "name": "黑风岭",
+          "description": "山势险峻，常年黑风呼啸。此地盘踞着一伙山贼，过往修士需多加小心。",
+          "type": "wild",
+          "safe": false,
+          "qiLevel": 3,
+          "dangerLevel": 1,
+          "monsters": [
+            "黑风山贼",
+            "山贼头目"
+          ],
+          "connections": [
+            "qingyun",
+            "underground_river"
+          ]
+        },
+        {
+          "id": "leiyin_temple",
+          "name": "雷音古刹",
+          "description": "一座废弃的古刹，断壁残垣间仍能看出昔日的辉煌。据说古刹地宫中藏有前辈高人的传承。",
+          "type": "dungeon",
+          "safe": false,
+          "qiLevel": 6,
+          "dangerLevel": 3,
+          "monsters": [
+            "石傀儡",
+            "怨灵"
+          ],
+          "feature": "隐藏传承",
+          "connections": [
+            "luoxia_forest",
+            "bibo_lake"
+          ]
+        },
+        {
+          "id": "underground_river",
+          "name": "地底暗河",
+          "description": "深入地下的暗河洞穴，头顶的钟乳石在微光中闪烁。河水冰冷刺骨，不知通向何处。",
+          "type": "dungeon",
+          "safe": false,
+          "qiLevel": 5,
+          "dangerLevel": 2,
+          "monsters": [
+            "地下巨蜥",
+            "吸血蝙蝠"
+          ],
+          "connections": [
+            "youming_grotto",
+            "heifeng_ridge"
+          ]
+        },
+        {
+          "id": "lingyun_peak",
+          "name": "灵云峰",
+          "description": "凌云之巅，云海翻涌。灵气浓郁，云雾深处生长着各种珍稀灵药。传说山顶有仙人留下的传承。",
+          "type": "wild",
+          "safe": false,
+          "qiLevel": 5,
+          "dangerLevel": 2,
+          "monsters": [
+            "野狼",
+            "青木蛇"
+          ],
+          "connections": [
+            "qingyun",
+            "luoxia_forest"
+          ]
+        },
+        {
+          "id": "lingyao_garden",
+          "name": "灵药园",
+          "description": "一片被阵法遮掩的灵药园圃，灵气充沛至极。地面上的灵药数不胜数，但守护妖兽也格外强大。",
+          "type": "wild",
+          "safe": false,
+          "qiLevel": 6,
+          "dangerLevel": 2,
+          "monsters": [
+            "铁皮野猪",
+            "石傀儡"
+          ],
+          "connections": [
+            "lingyun_peak"
+          ]
+        },
+        {
+          "id": "duzhang_swamp",
+          "name": "毒瘴沼泽",
+          "description": "终年被毒雾笼罩的死亡之地，沼泽中藏着无数毒物。只有修为深厚的修士才敢踏足此地。",
+          "type": "wild",
+          "safe": false,
+          "qiLevel": 6,
+          "dangerLevel": 3,
+          "monsters": [
+            "毒鳞蛇",
+            "沼泽巨蛙",
+            "毒蚊群"
+          ],
+          "connections": [
+            "qingyun",
+            "guji_ruins"
+          ]
+        },
+        {
+          "id": "guji_ruins",
+          "name": "远古遗迹",
+          "description": "上古修士留下的废墟，断壁残垣间刻满了古老的符文。空气中弥漫着苍茫的气息，仿佛能听到远古的回响。",
+          "type": "dungeon",
+          "safe": false,
+          "qiLevel": 8,
+          "dangerLevel": 3,
+          "monsters": [
+            "石像守卫",
+            "上古傀儡",
+            "残魂"
+          ],
+          "connections": [
+            "duzhang_swamp",
+            "bingfeng_grotto"
+          ]
+        },
+        {
+          "id": "bingfeng_grotto",
+          "name": "冰风石窟",
+          "description": "位于冰川深处的洞穴，刺骨的寒风终年不息。洞壁上凝结着万载寒冰，在幽光中泛着蓝色的微芒。",
+          "type": "dungeon",
+          "safe": false,
+          "qiLevel": 7,
+          "dangerLevel": 3,
+          "monsters": [
+            "冰晶蝎",
+            "雪狼",
+            "冰霜巨人"
+          ],
+          "connections": [
+            "guji_ruins"
+          ]
+        }
+      ]
+    }
+  ]
+}
